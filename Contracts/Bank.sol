@@ -6,9 +6,8 @@ interface GovernmentInterface{
 }
 
 contract Bank is Destroyable{
-
-    [//]: #  ( Here argument of GovernmentInterface is the address of Government contract)
     
+    // Here argument of GovernmentInterface is the address of Government contract
     GovernmentInterface govtInstance = GovernmentInterface(0xddaAd340b0f1Ef65169Ae5E41A8b10776a75482d);
     mapping(address => uint) balance;
     event BalanceDeposited(uint amount, address indexed depositedTo);
